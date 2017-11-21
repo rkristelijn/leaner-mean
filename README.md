@@ -26,8 +26,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Steps to build
+## Steps to build from scratch
 1. `ng new leaner-mean` [@see](https://cli.angular.io/) (`npm install` runs automatically)
 2. `ng add component ProductList`
 3. copy css files, html files, api files from APM project [@see](https://github.com/adamip/DeborahK_Angular2_GettingStarted)
 4. add ngx-bootstrap: `npm i bootstrap ngx-bootstap --save` + add css to `angular-cli.json` [@see](https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md)
+5. update package.json script: `"start": "ng serve",` to `"start": "ng serve --host 0.0.0.0 --disable-host-check",` [@see](https://github.com/angular/angular-cli)
+6. connect git: `git status`, `git commit -a -m "initial commit"`
+7. [github.com](https://github.com/new) add a new project (don't init)
+8. `git remote add origin https://github.com/rkristelijn/leaner-mean.git`
+9. `git push -u origin master`
