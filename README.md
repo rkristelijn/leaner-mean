@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Steps to build
+1. `ng new leaner-mean` [@see](https://cli.angular.io/) (`npm install` runs automatically)
+2. `ng add component ProductList`
+3. copy css files, html files, api files from APM project [@see](https://github.com/adamip/DeborahK_Angular2_GettingStarted)
+4. add ngx-bootstrap: `npm i bootstrap ngx-bootstap --save` + add css to `angular-cli.json` [@see](https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md)
