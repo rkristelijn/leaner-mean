@@ -36,3 +36,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7. [github.com](https://github.com/new) add a new project (don't init)
 8. `git remote add origin https://github.com/rkristelijn/leaner-mean.git`
 9. `git push -u origin master`
+10. create a branch to keep this version: `git checkout -b 1.0.0_initial_working_copy`,`git status` to see you are on the branch
