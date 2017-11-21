@@ -42,4 +42,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Chapter 2:
 1. switch back to master: `git status`, `git checkout master`, `git pull` [@see](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html)
-2. added ngModel
+2. added ngModel in `product-list.component.html`, `product-list.component.ts`, `app.module.ts` -> add `FormsModule` to `import` at top and `imports`-array
+3. added pipe: `ng generate pipe convertToSpaces`

@@ -12,14 +12,24 @@ export class ProductListComponent implements OnInit {
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
-  listFilter: string = 'cart';
   errorMessage: string;
   products: IProduct[];
+
+  _listFilter: string;
+  get listFilter(): string {
+    console.log('getting listFilter');
+    return this._listFilter;
+  }
+  set listFilter(value: string) {
+    this._listFilter = value;
+    console.log(`setting listFilter with ${value}`);
+  }
 
   constructor() { }
   
   ngOnInit(): void {
     this.products = this.getStaticData();
+    this.listFilter = 'cart';
   }
 
   toggleImage(): void {
