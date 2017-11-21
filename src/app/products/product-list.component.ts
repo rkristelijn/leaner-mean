@@ -17,19 +17,16 @@ export class ProductListComponent implements OnInit {
 
   _listFilter: string;
   get listFilter(): string {
-    console.log('getting listFilter');
     return this._listFilter;
   }
   set listFilter(value: string) {
     this._listFilter = value;
-    console.log(`setting listFilter with ${value}`);
   }
 
-  constructor() { }
+  constructor() {}
   
   ngOnInit(): void {
     this.products = this.getStaticData();
-    this.listFilter = 'cart';
   }
 
   toggleImage(): void {
