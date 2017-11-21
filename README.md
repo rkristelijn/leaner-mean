@@ -37,3 +37,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 8. `git remote add origin https://github.com/rkristelijn/leaner-mean.git`
 9. `git push -u origin master`
 10. create a branch to keep this version: `git checkout -b 1.0.0_initial_working_copy`,`git status` to see you are on the branch
+11. `git push --set-upstream origin 1.0.0_initial_working_copy`
+12. on github create a pull request, and merge code into master using web 
