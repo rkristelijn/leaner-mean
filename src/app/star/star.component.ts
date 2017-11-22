@@ -9,12 +9,12 @@ import { Component, OnChanges, Input,
 export class StarComponent implements OnChanges {
   @Input() rating: number;
   starWidth: number;
+  starMaxWidth: number = 86;
+  maxRating: number = 5;
   @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnChanges(): void {
-    // Convert x out of 5 starts
-    // to y out of 86px width
-    this.starWidth = this.rating * 86 / 5;
+    this.starWidth = this.rating * this.starMaxWidth / this.maxRating;
   }
 
   onClick(): void {
