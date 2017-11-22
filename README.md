@@ -40,8 +40,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 11. `git push --set-upstream origin 1.0.0_initial_working_copy`
 12. on github create a pull request, and merge code into master using web 
 
-## Chapter 2:
+## Chapter 2: Implementing filterPipe and convertPipe
 1. switch back to master: `git status`, `git checkout master`, `git pull` [@see](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html)
 2. added ngModel in `product-list.component.html`, `product-list.component.ts`, `app.module.ts` -> add `FormsModule` to `import` at top and `imports`-array
 3. added pipe: `ng generate pipe convertToSpaces` -> add implementation of pipe, -> add pipe to template
 4. added pipe: `ng generate pipe products/productFilter`-> [@see](https://angular.io/guide/pipes) (FlyingHeroesPipe) make sure to handle `listFilter === undefined`, add ` | productFilter:listFilter` to `*ngFor`
+
+## Chapter 3: Nested component
+1. `ng g component star` to create a new component
+2. add template (html) and style (css) to component from APM example
+3. add nested component to product-list
+
+
