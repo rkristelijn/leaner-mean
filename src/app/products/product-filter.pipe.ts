@@ -12,8 +12,6 @@ export class ProductFilterPipe implements PipeTransform {
     
     let filterByDefined: boolean = !!filterBy;
     
-    //console.log(`productFilter Pipe: ${filterBy}`);
-    
     if(!filterByDefined) 
       return allProducts;
     

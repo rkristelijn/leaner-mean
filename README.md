@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
+This project is based on this [Pluralsight](https://app.pluralsight.com/player?name=angular-2-getting-started-update-m7&clip=5&course=angular-2-getting-started-update&author=deborah-kurata) Course from Deborah Kurata called [Angular getting started](https://app.pluralsight.com/player?name=angular-2-getting-started-update-m7&clip=5&course=angular-2-getting-started-update&author=deborah-kurata) however it uses the tools at hand to create the same result, including some optimizations and building towards a full MEAN application to replace the initial lean-mean project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -50,5 +52,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1. `ng g component star` to create a new component
 2. add template (html) and style (css) to component from APM example
 3. add nested component to product-list
-
+4. create branch to keep this version
+5. 
+## Chapter 4: Service
+1. `ng g service products/product` to create a new service *in* the products folder
+2. add providers array to decorator of ProductListComponent
+3. move implementation of data to ProductService
+4. implement dependancy injection in ProductListComponent of the service
 
