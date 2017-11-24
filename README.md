@@ -58,5 +58,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1. `ng g service products/product` to create a new service *in* the products folder
 2. add providers array to decorator of ProductListComponent
 3. move implementation of data to ProductService
-4. implement dependancy injection in ProductListComponent of the service
+4. implement dependancy injection in ProductListComponent of the service `git checkout -b 4.0.0_implemented_service`, `git push --set-upstream origin 4.0.0_implemented_service`
+5. change back to master `git checkout master`, `git pull`
+5. 
 
