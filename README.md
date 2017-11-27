@@ -81,3 +81,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1. `ng g s products/product-guard -m app.module`
 2. implement guard
 3. add guard to router
+
+## Chapter 14: Modules
+1. `ng g m products/product --flat -m app.module`
+2. move product-specific stuff into product module
+3. remove obsolete dependancies from app module
