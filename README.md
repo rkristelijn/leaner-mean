@@ -74,3 +74,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 3. add routes to app.module.ts
 4. remove outlets from components as we don't need it anymore
 5. add the menu
+6. add branche for reference `git checkout -b 12.0.0_routers`, `git push --set-upstream origin 12.0.0_routers`
+7. to see what we've done in this chapter: `git diff 12.0.0_routers 4.0.0_implemented_service`
+
+## Chapter 13: Guards
+1. `ng g s products/product-guard -m app.module`
+2. implement guard
+3. add guard to router

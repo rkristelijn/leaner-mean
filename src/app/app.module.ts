@@ -13,6 +13,8 @@ import { WelcomeComponent } from './home/welcome.component';
 import { ConvertToSpacesPipe } from './convert-to-spaces.pipe';
 import { ProductFilterPipe } from './products/product-filter.pipe';
 
+import { ProductGuardService } from './products/product-guard.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +32,13 @@ import { ProductFilterPipe } from './products/product-filter.pipe';
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', component: ProductDetailComponent },
+      { path: 'products/:id', component: ProductDetailComponent, canActivate: [ProductGuardService]},
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
-  providers: [],
+  providers: [ProductGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
