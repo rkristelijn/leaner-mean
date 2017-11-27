@@ -31,4 +31,8 @@ export class ProductDetailComponent implements OnInit {
   onBack(): void {
     this.router.navigate(['/products']);
   }
+
+  onRatingClicked(message: string) : void {
+    this.pageTitle = `Product Details: ${message}`;
+  }
 }

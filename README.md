@@ -86,3 +86,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1. `ng g m products/product --flat -m app.module`
 2. move product-specific stuff into product module
 3. remove obsolete dependancies from app module
+4. `ng g m shared/shared --flat -m products/product.module`
+5.  `ng g m app-routing -m app.module`
