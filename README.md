@@ -42,19 +42,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 11. `git push --set-upstream origin 1.0.0_initial_working_copy`
 12. on github create a pull request, and merge code into master using web 
 
-## Chapter 2: Implementing filterPipe and convertPipe
+## Chapter 7: Implementing filterPipe and convertPipe
 1. switch back to master: `git status`, `git checkout master`, `git pull` [@see](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html)
 2. added ngModel in `product-list.component.html`, `product-list.component.ts`, `app.module.ts` -> add `FormsModule` to `import` at top and `imports`-array
 3. added pipe: `ng generate pipe convertToSpaces` -> add implementation of pipe, -> add pipe to template
 4. added pipe: `ng generate pipe products/productFilter`-> [@see](https://angular.io/guide/pipes) (FlyingHeroesPipe) make sure to handle `listFilter === undefined`, add ` | productFilter:listFilter` to `*ngFor`
 
-## Chapter 3: Nested component
+## Chapter 8: Nested component
 1. `ng g component star` to create a new component
 2. add template (html) and style (css) to component from APM example
 3. add nested component to product-list
 4. create branch to keep this version
 5. 
-## Chapter 4: Service
+## Chapter 9: Service
 1. `ng g service products/product` to create a new service *in* the products folder
 2. add providers array to decorator of ProductListComponent
 3. move implementation of data to ProductService
@@ -62,9 +62,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. `git checkout -b 4.0.0_implemented_service`, `git push --set-upstream origin 4.0.0_implemented_service`
 5. change back to master `git checkout master`, `git pull`
 
-## Chapter 5: HTTP
+## Chapter 11: HTTP
 1. add products.json in assets folder
 2. add `import { HttpClientModule } from '@angular/common/http';` in `src/app/app.module` and in `imports: []`
 2. remove static data from `src/app/products/product.service.ts` and let the `getProducts()` function return an Observable, returning this.http.get(), casted into `Iproduct[]`
 3. let the ngOnInit subscribe to the getProducts() function in the service
-4. 
+
+## Chapter 12: Routing
+1. copy home folder from APM folder, don't forget the images folder in assets
+2. `ng g c products/product-detail --flat`
+3. add routes to app.module.ts
+4. remove outlets from components as we don't need it anymore
+5. add the menu
